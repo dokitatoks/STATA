@@ -1,0 +1,476 @@
+
+. local hiv "C:/Users/oadetokunboh/Desktop/hiv/"
+
+. local child "C:/Users/oadetokunboh/Desktop/child/"
+
+. local ana "C:/Users/oadetokunboh/Desktop/ana/"
+
+. 
+. local country " ao bf bu cd  ci cm  ga gh gm gn et  ke  lb ls ml mw ni nm  rw sl  sn st  sz td tg zm zw"
+
+. 
+. 
+. cd `ana'
+C:\Users\oadetokunboh\Desktop\ana
+
+. 
+. use data1, clear
+
+. 
+.  foreach num of numlist 2/27 {
+  2.  append using data`num'
+  3.   }
+(label medu already defined)
+(label mage already defined)
+(label diar already defined)
+(label ari already defined)
+(label fever already defined)
+(label dpt3 already defined)
+(label V024 already defined)
+(label hiv03 already defined)
+(label medu already defined)
+(label mage already defined)
+(label diar already defined)
+(label ari already defined)
+(label fever already defined)
+(label meas already defined)
+(label dpt3 already defined)
+(label hiv03 already defined)
+(label medu already defined)
+(label mage already defined)
+(label diar already defined)
+(label ari already defined)
+(label fever already defined)
+(label meas already defined)
+(label dpt3 already defined)
+(label v024 already defined)
+(label hiv03 already defined)
+(label medu already defined)
+(label mage already defined)
+(label diar already defined)
+(label ari already defined)
+(label fever already defined)
+(label meas already defined)
+(label dpt3 already defined)
+(label V024 already defined)
+(label hiv03 already defined)
+(label medu already defined)
+(label mage already defined)
+(label diar already defined)
+(label ari already defined)
+(label fever already defined)
+(label meas already defined)
+(label dpt3 already defined)
+(label v024 already defined)
+(label hiv03 already defined)
+(label medu already defined)
+(label mage already defined)
+(label diar already defined)
+(label ari already defined)
+(label fever already defined)
+(label meas already defined)
+(label dpt3 already defined)
+(label v024 already defined)
+(label hiv03 already defined)
+(label medu already defined)
+(label mage already defined)
+(label diar already defined)
+(label ari already defined)
+(label fever already defined)
+(label meas already defined)
+(label dpt3 already defined)
+(label v024 already defined)
+(label medu already defined)
+(label mage already defined)
+(label diar already defined)
+(label ari already defined)
+(label fever already defined)
+(label meas already defined)
+(label dpt3 already defined)
+(label V024 already defined)
+(label HIV03 already defined)
+(label medu already defined)
+(label mage already defined)
+(label diar already defined)
+(label ari already defined)
+(label fever already defined)
+(label meas already defined)
+(label dpt3 already defined)
+(label V024 already defined)
+(label hiv03 already defined)
+(label medu already defined)
+(label mage already defined)
+(label diar already defined)
+(label ari already defined)
+(label fever already defined)
+(label meas already defined)
+(label dpt3 already defined)
+(label V024 already defined)
+(label hiv03 already defined)
+(label medu already defined)
+(label mage already defined)
+(label diar already defined)
+(label ari already defined)
+(label fever already defined)
+(label meas already defined)
+(label dpt3 already defined)
+(label v024 already defined)
+(label HIV03 already defined)
+(label medu already defined)
+(label mage already defined)
+(label diar already defined)
+(label ari already defined)
+(label fever already defined)
+(label meas already defined)
+(label dpt3 already defined)
+(label V024 already defined)
+(label HIV03 already defined)
+(label medu already defined)
+(label mage already defined)
+(label diar already defined)
+(label ari already defined)
+(label fever already defined)
+(label meas already defined)
+(label dpt3 already defined)
+(label V024 already defined)
+(label HIV03 already defined)
+(label medu already defined)
+(label mage already defined)
+(label diar already defined)
+(label ari already defined)
+(label fever already defined)
+(label meas already defined)
+(label dpt3 already defined)
+(label V024 already defined)
+(label medu already defined)
+(label mage already defined)
+(label diar already defined)
+(label ari already defined)
+(label fever already defined)
+(label meas already defined)
+(label dpt3 already defined)
+(label V024 already defined)
+(label HIV03 already defined)
+(label medu already defined)
+(label mage already defined)
+(label diar already defined)
+(label ari already defined)
+(label fever already defined)
+(label meas already defined)
+(label dpt3 already defined)
+(label V024 already defined)
+(label HIV03 already defined)
+(label medu already defined)
+(label mage already defined)
+(label diar already defined)
+(label ari already defined)
+(label fever already defined)
+(label meas already defined)
+(label dpt3 already defined)
+(label V024 already defined)
+(label HIV03 already defined)
+(label medu already defined)
+(label mage already defined)
+(label diar already defined)
+(label ari already defined)
+(label fever already defined)
+(label meas already defined)
+(label dpt3 already defined)
+(label V024 already defined)
+(label HIV03 already defined)
+(label medu already defined)
+(label mage already defined)
+(label diar already defined)
+(label ari already defined)
+(label fever already defined)
+(label meas already defined)
+(label dpt3 already defined)
+(label V024 already defined)
+(label HIV03 already defined)
+(label medu already defined)
+(label mage already defined)
+(label diar already defined)
+(label ari already defined)
+(label fever already defined)
+(label meas already defined)
+(label dpt3 already defined)
+(label V024 already defined)
+(label hiv03 already defined)
+(label medu already defined)
+(label mage already defined)
+(label diar already defined)
+(label ari already defined)
+(label fever already defined)
+(label meas already defined)
+(label dpt3 already defined)
+(label v024 already defined)
+(label hiv03 already defined)
+(label medu already defined)
+(label mage already defined)
+(label diar already defined)
+(label ari already defined)
+(label fever already defined)
+(label meas already defined)
+(label dpt3 already defined)
+(label HIV03 already defined)
+(label medu already defined)
+(label mage already defined)
+(label diar already defined)
+(label ari already defined)
+(label fever already defined)
+(label meas already defined)
+(label dpt3 already defined)
+(label V024 already defined)
+(label HIV03 already defined)
+(label medu already defined)
+(label mage already defined)
+(label diar already defined)
+(label ari already defined)
+(label fever already defined)
+(label meas already defined)
+(label dpt3 already defined)
+(label V024 already defined)
+(label HIV03 already defined)
+(label medu already defined)
+(label mage already defined)
+(label diar already defined)
+(label ari already defined)
+(label fever already defined)
+(label meas already defined)
+(label dpt3 already defined)
+(label V024 already defined)
+(label HIV03 already defined)
+(label medu already defined)
+(label mage already defined)
+(label diar already defined)
+(label ari already defined)
+(label fever already defined)
+(label meas already defined)
+(label dpt3 already defined)
+(label V024 already defined)
+
+.   
+.  
+. 
+. 
+. 
+. replace co = "Lesotho" if co=="LS6"
+variable co was str3 now str7
+(1,609 real changes made)
+
+. replace co = "Angola" if co=="AO7"
+(6,476 real changes made)
+
+. replace co =  "Ethiopia" if co =="ET6"
+variable co was str7 now str8
+(11,152 real changes made)
+
+. replace co =  "Cameroon" if co =="CM6"
+(5,418 real changes made)
+
+. replace co =  "Congo DR" if co =="CD6"
+(9,460 real changes made)
+
+. replace co =  "Burkina Faso"  if co =="BF6"
+variable co was str8 now str12
+(7,561 real changes made)
+
+. replace co = "Lesotho" if co=="LS6"
+(0 real changes made)
+
+. replace co = "Malawi" if co=="MW7"
+(5,691 real changes made)
+
+. replace co = "Swaziland" if co=="SZ5"
+(2,639 real changes made)
+
+. replace co = "Zambia" if co== "ZM6"
+(12,770 real changes made)
+
+. replace co = "Zimbabwe" if co=="ZW7"
+(5,577 real changes made)
+
+. replace co =  "Burkina Faso"  if co =="BF6"
+(0 real changes made)
+
+. replace co =  "Burundi" if co =="BU6"
+(3,799 real changes made)
+
+. replace co =  "Cameroon" if co =="CM6"
+(0 real changes made)
+
+. replace co =  "Congo DR" if co =="CD5"
+(0 real changes made)
+
+. replace co =  "Ethiopia" if co =="ET6"
+(0 real changes made)
+
+. replace co =  "Ghana" if co =="GH6"
+(2,972 real changes made)
+
+. replace co =  "Gabon" if co =="GA6"
+(4,105 real changes made)
+
+. replace co =  "Gambia" if co =="GM6"
+(3,743 real changes made)
+
+. replace co =  "Guinea" if co =="GN6"
+(3,698 real changes made)
+
+. replace co =  "Kenya" if co =="KE5"
+(2,787 real changes made)
+
+. replace co =  "Liberia" if co =="LB6"
+(3,741 real changes made)
+
+. replace co =  "Mali" if co =="ML6"
+(5,230 real changes made)
+
+. replace co =  "Niger" if co =="NM6"
+(2,333 real changes made)
+
+. replace co =  "Namibia" if co =="NI6"
+(5,880 real changes made)
+
+. replace co =  "Rwanda" if co == "RW6"
+(3,961 real changes made)
+
+. replace co =  "Sierra Leone" if co =="SL6"
+(5,796 real changes made)
+
+. replace co =  "Senegal" if co =="SN6"
+(4,358 real changes made)
+
+. replace co =  "Sao T&P" if co =="ST5"
+(1,893 real changes made)
+
+. replace co =  "Cote d'Ivoire" if co =="CI6"
+variable co was str12 now str13
+(3,743 real changes made)
+
+. replace co =  "Togo" if co =="TG6"
+(3,534 real changes made)
+
+. replace co =  "Chad" if co =="TD6"
+(6,119 real changes made)
+
+. 
+. 
+. tab dpt3, gen (dpt3)
+
+  RECODE of |
+         h7 |
+  (received |
+     dpt 3) |      Freq.     Percent        Cum.
+------------+-----------------------------------
+         no |     43,599       36.59       36.59
+        yes |     75,572       63.41      100.00
+------------+-----------------------------------
+      Total |    119,171      100.00
+
+. tab ari, gen (ari)
+
+  RECODE of |
+       h31b |
+    (short, |
+      rapid |
+   breaths) |      Freq.     Percent        Cum.
+------------+-----------------------------------
+         no |     27,458       67.53       67.53
+        yes |     13,201       32.47      100.00
+------------+-----------------------------------
+      Total |     40,659      100.00
+
+. tab diar, gen (diar)
+
+  RECODE of |
+   h11 (had |
+   diarrhea |
+  recently) |      Freq.     Percent        Cum.
+------------+-----------------------------------
+         no |    103,769       83.59       83.59
+        yes |     20,372       16.41      100.00
+------------+-----------------------------------
+      Total |    124,141      100.00
+
+. tab fever, gen (fever)
+
+  RECODE of |
+   h22 (had |
+   fever in |
+   last two |
+     weeks) |      Freq.     Percent        Cum.
+------------+-----------------------------------
+         no |     97,208       78.24       78.24
+        yes |     27,031       21.76      100.00
+------------+-----------------------------------
+      Total |    124,239      100.00
+
+. tab medu, gen(medu)
+
+   RECODE of |
+        v106 |
+    (highest |
+ educational |
+      level) |      Freq.     Percent        Cum.
+-------------+-----------------------------------
+no education |     58,862       43.27       43.27
+    primary  |     45,374       33.36       76.63
+  secondary+ |     31,789       23.37      100.00
+-------------+-----------------------------------
+       Total |    136,025      100.00
+
+. tab wealth, gen(wealth)
+
+3 quantiles |
+    of v191 |      Freq.     Percent        Cum.
+------------+-----------------------------------
+          1 |     45,988       33.80       33.80
+          2 |     45,705       33.60       67.40
+          3 |     44,352       32.60      100.00
+------------+-----------------------------------
+      Total |    136,045      100.00
+
+. tab mage, gen(mage)
+
+  RECODE of |
+       v012 |
+(respondent |
+ 's current |
+       age) |      Freq.     Percent        Cum.
+------------+-----------------------------------
+      15-24 |     40,190       29.54       29.54
+      25-34 |     64,580       47.47       77.01
+      35-49 |     31,275       22.99      100.00
+------------+-----------------------------------
+      Total |    136,045      100.00
+
+. 
+. 
+. merge m:1 co using "C:/Users/oadetokunboh/Desktop/countrydata.dta"
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                         1,893
+        from master                     1,893  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                           134,152  (_merge==3)
+    -----------------------------------------
+
+. 
+. save, replace
+file data1.dta saved
+
+. 
+. save study1data, replace
+(note: file study1data.dta not found)
+file study1data.dta saved
+
+. 
+. log close
+      name:  <unnamed>
+       log:  C:\Users\oadetokunboh\Desktop\ana\recodestudy1data.log
+  log type:  text
+ closed on:  26 Jan 2018, 11:29:06
+----------------------------------------------------------------------------------------------------------------------------------

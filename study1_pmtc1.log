@@ -1,0 +1,362 @@
+
+. 
+. use C:/Users/oadetokunboh/Desktop/study1_pmtc, clear
+
+. metan  dpt3_hpos nodpt3_hpos dpt3_hneg nodpt3_hneg, or lcols( country ) xlabel(.01,1,5,15) force classic random
+
+           Study     |     OR    [95% Conf. Interval]     % Weight
+---------------------+---------------------------------------------------
+Angola               |  0.717       0.437     1.176          3.62
+Burkina Faso         |  1.268       0.641     2.510          2.61
+Burundi              |  0.988       0.521     1.873          2.81
+Cameroon             |  1.497       1.101     2.035          4.92
+Chad                 |  1.880       1.149     3.075          3.64
+Congo DR             |  0.733       0.482     1.114          4.12
+Cote d'Ivoire        |  1.033       0.709     1.507          4.41
+Ethiopia             |  2.513       1.756     3.595          4.55
+Gabon                |  0.973       0.704     1.346          4.79
+Gambia               |  0.692       0.390     1.228          3.16
+Ghana                |  0.985       0.526     1.843          2.87
+Guinea               |  1.402       0.810     2.426          3.30
+Kenya                |  0.927       0.676     1.270          4.86
+Lesotho              |  1.076       0.806     1.438          5.04
+Liberia              |  0.658       0.369     1.172          3.14
+Malawi               |  0.671       0.494     0.912          4.92
+Mali                 |  1.134       0.623     2.065          3.02
+Namibia              |  2.290       0.843     6.215          1.56
+Niger                |  1.058       0.807     1.386          5.17
+Rwanda               |  1.872       0.819     4.281          2.05
+Senegal              |  0.641       0.308     1.333          2.39
+Sierra Leone         |  0.661       0.410     1.066          3.73
+Swaziland            |  0.849       0.678     1.064          5.48
+Togo                 |  2.023       1.000     4.093          2.51
+Zambia               |  1.469       1.255     1.718          5.89
+Zimbabwe             |  0.963       0.768     1.209          5.47
+---------------------+---------------------------------------------------
+D+L pooled OR        |  1.070       0.927     1.236        100.00
+---------------------+---------------------------------------------------
+
+  Heterogeneity chi-squared =  86.44 (d.f. = 25) p = 0.000
+  I-squared (variation in OR attributable to heterogeneity) =  71.1%
+  Estimate of between-study variance Tau-squared =  0.0850
+
+  Test of OR=1 : z=   0.93 p = 0.355
+
+. metaninf dpt3_hpos nodpt3_hpos dpt3_hneg nodpt3_hneg, or random label(namevar= country)
+
+------------------------------------------------------------------------------
+ Study omitted     |   Estimate       [95%  Conf.  Interval]
+-------------------+----------------------------------------------------------
+ Angola            |   1.086464       .9388082     1.2573432
+ Burkina Faso      |   1.0655165      .91987556    1.2342163
+ Burundi           |   1.0729067      .92598748    1.2431365
+ Cameroon          |   1.0519391      .90736216    1.2195526
+ Chad              |   1.0476936      .90657395    1.2107803
+ Congo DR          |   1.0877783      .93976873    1.2590989
+ Cote d'Ivoire     |   1.0722812      .92312843    1.2455331
+ Ethiopia          |   1.0257789      .89936882    1.1699564
+ Gabon             |   1.0756788      .92549372    1.2502354
+ Gambia            |   1.0855497      .93833935    1.255855
+ Ghana             |   1.073072       .92606825    1.2434109
+ Guinea            |   1.0605611      .91525251    1.2289393
+ Kenya             |   1.0783873      .92809796    1.2530134
+ Lesotho           |   1.0703701      .91971511    1.2457032
+ Liberia           |   1.0871512      .94015932    1.2571248
+ Malawi            |   1.0963225      .9508487     1.2640527
+ Mali              |   1.0684925      .92187548    1.238428
+ Namibia           |   1.0574654      .91533345    1.2216674
+ Niger             |   1.0714166      .92013526    1.2475705
+ Rwanda            |   1.0578586      .91488546    1.2231747
+ Senegal           |   1.0837799      .93732053    1.253124
+ Sierra Leone      |   1.090256       .9431327     1.2603297
+ Swaziland         |   1.0847828      .93420625    1.2596295
+ Togo              |   1.0528812      .91108775    1.2167422
+ Zambia            |   1.0484318      .9076243     1.2110839
+ Zimbabwe          |   1.077197       .92448586    1.2551336
+-------------------+----------------------------------------------------------
+ Combined          |   1.07029        .92693759    1.235812
+------------------------------------------------------------------------------
+
+. 
+. 
+. *metareg mtct
+. recode  mtct (min/10.0 = 0 "Low") (10.1/max = 1 "High"), gen(mtc)
+variable mtct not found
+r(111);
+
+end of do-file
+
+r(111);
+
+. do "C:\Users\OADETO~1\AppData\Local\Temp\STD00000000.tmp"
+
+. set more off
+
+. 
+. capture log using study1_pmtc1, replace text
+
+. 
+. use C:/Users/oadetokunboh/Desktop/study1_pmtc, clear
+
+. metan  dpt3_hpos nodpt3_hpos dpt3_hneg nodpt3_hneg, or lcols( country ) xlabel(.01,1,5,15) force classic random
+
+           Study     |     OR    [95% Conf. Interval]     % Weight
+---------------------+---------------------------------------------------
+Angola               |  0.717       0.437     1.176          3.62
+Burkina Faso         |  1.268       0.641     2.510          2.61
+Burundi              |  0.988       0.521     1.873          2.81
+Cameroon             |  1.497       1.101     2.035          4.92
+Chad                 |  1.880       1.149     3.075          3.64
+Congo DR             |  0.733       0.482     1.114          4.12
+Cote d'Ivoire        |  1.033       0.709     1.507          4.41
+Ethiopia             |  2.513       1.756     3.595          4.55
+Gabon                |  0.973       0.704     1.346          4.79
+Gambia               |  0.692       0.390     1.228          3.16
+Ghana                |  0.985       0.526     1.843          2.87
+Guinea               |  1.402       0.810     2.426          3.30
+Kenya                |  0.927       0.676     1.270          4.86
+Lesotho              |  1.076       0.806     1.438          5.04
+Liberia              |  0.658       0.369     1.172          3.14
+Malawi               |  0.671       0.494     0.912          4.92
+Mali                 |  1.134       0.623     2.065          3.02
+Namibia              |  2.290       0.843     6.215          1.56
+Niger                |  1.058       0.807     1.386          5.17
+Rwanda               |  1.872       0.819     4.281          2.05
+Senegal              |  0.641       0.308     1.333          2.39
+Sierra Leone         |  0.661       0.410     1.066          3.73
+Swaziland            |  0.849       0.678     1.064          5.48
+Togo                 |  2.023       1.000     4.093          2.51
+Zambia               |  1.469       1.255     1.718          5.89
+Zimbabwe             |  0.963       0.768     1.209          5.47
+---------------------+---------------------------------------------------
+D+L pooled OR        |  1.070       0.927     1.236        100.00
+---------------------+---------------------------------------------------
+
+  Heterogeneity chi-squared =  86.44 (d.f. = 25) p = 0.000
+  I-squared (variation in OR attributable to heterogeneity) =  71.1%
+  Estimate of between-study variance Tau-squared =  0.0850
+
+  Test of OR=1 : z=   0.93 p = 0.355
+
+. metaninf dpt3_hpos nodpt3_hpos dpt3_hneg nodpt3_hneg, or random label(namevar= country)
+
+------------------------------------------------------------------------------
+ Study omitted     |   Estimate       [95%  Conf.  Interval]
+-------------------+----------------------------------------------------------
+ Angola            |   1.086464       .9388082     1.2573432
+ Burkina Faso      |   1.0655165      .91987556    1.2342163
+ Burundi           |   1.0729067      .92598748    1.2431365
+ Cameroon          |   1.0519391      .90736216    1.2195526
+ Chad              |   1.0476936      .90657395    1.2107803
+ Congo DR          |   1.0877783      .93976873    1.2590989
+ Cote d'Ivoire     |   1.0722812      .92312843    1.2455331
+ Ethiopia          |   1.0257789      .89936882    1.1699564
+ Gabon             |   1.0756788      .92549372    1.2502354
+ Gambia            |   1.0855497      .93833935    1.255855
+ Ghana             |   1.073072       .92606825    1.2434109
+ Guinea            |   1.0605611      .91525251    1.2289393
+ Kenya             |   1.0783873      .92809796    1.2530134
+ Lesotho           |   1.0703701      .91971511    1.2457032
+ Liberia           |   1.0871512      .94015932    1.2571248
+ Malawi            |   1.0963225      .9508487     1.2640527
+ Mali              |   1.0684925      .92187548    1.238428
+ Namibia           |   1.0574654      .91533345    1.2216674
+ Niger             |   1.0714166      .92013526    1.2475705
+ Rwanda            |   1.0578586      .91488546    1.2231747
+ Senegal           |   1.0837799      .93732053    1.253124
+ Sierra Leone      |   1.090256       .9431327     1.2603297
+ Swaziland         |   1.0847828      .93420625    1.2596295
+ Togo              |   1.0528812      .91108775    1.2167422
+ Zambia            |   1.0484318      .9076243     1.2110839
+ Zimbabwe          |   1.077197       .92448586    1.2551336
+-------------------+----------------------------------------------------------
+ Combined          |   1.07029        .92693759    1.235812
+------------------------------------------------------------------------------
+
+. 
+. 
+. *metareg mtct
+. recode  mtct (min/10.0 = 0 "Low") (10.1/max = 1 "High"), gen(mtc)
+variable mtct not found
+r(111);
+
+end of do-file
+
+r(111);
+
+. do "C:\Users\OADETO~1\AppData\Local\Temp\STD00000000.tmp"
+
+. set more off
+
+. 
+. capture log using study1_mtc1, replace text
+
+. 
+. use C:/Users/oadetokunboh/Desktop/study1_mtc, clear
+
+. metan  dpt3_hpos nodpt3_hpos dpt3_hneg nodpt3_hneg, or lcols( country ) xlabel(.01,1,5,15) force classic random
+
+           Study     |     OR    [95% Conf. Interval]     % Weight
+---------------------+---------------------------------------------------
+Angola               |  0.717       0.437     1.176          3.65
+Burkina Faso         |  1.268       0.641     2.510          2.49
+Burundi              |  0.988       0.521     1.873          2.71
+Cameroon             |  1.497       1.101     2.035          5.36
+Chad                 |  1.880       1.149     3.075          3.67
+Congo DR             |  0.733       0.482     1.114          4.28
+Cote d'Ivoire        |  1.033       0.709     1.507          4.66
+Gabon                |  0.973       0.704     1.346          5.18
+Gambia               |  0.692       0.390     1.228          3.11
+Ghana                |  0.985       0.526     1.843          2.78
+Guinea               |  1.402       0.810     2.426          3.27
+Kenya                |  0.927       0.676     1.270          5.27
+Lesotho              |  1.076       0.806     1.438          5.54
+Liberia              |  0.658       0.369     1.172          3.08
+Malawi               |  0.671       0.494     0.912          5.36
+Mali                 |  1.134       0.623     2.065          2.94
+Namibia              |  2.290       0.843     6.215          1.41
+Niger                |  1.058       0.807     1.386          5.73
+Rwanda               |  1.872       0.819     4.281          1.90
+Senegal              |  0.641       0.308     1.333          2.26
+Sierra Leone         |  0.661       0.410     1.066          3.79
+Swaziland            |  0.849       0.678     1.064          6.18
+Togo                 |  2.023       1.000     4.093          2.38
+Zambia               |  1.469       1.255     1.718          6.83
+Zimbabwe             |  0.963       0.768     1.209          6.17
+---------------------+---------------------------------------------------
+D+L pooled OR        |  1.026       0.899     1.170        100.00
+---------------------+---------------------------------------------------
+
+  Heterogeneity chi-squared =  65.17 (d.f. = 24) p = 0.000
+  I-squared (variation in OR attributable to heterogeneity) =  63.2%
+  Estimate of between-study variance Tau-squared =  0.0595
+
+  Test of OR=1 : z=   0.38 p = 0.704
+
+. metaninf dpt3_hpos nodpt3_hpos dpt3_hneg nodpt3_hneg, or random label(namevar= country)
+
+------------------------------------------------------------------------------
+ Study omitted     |   Estimate       [95%  Conf.  Interval]
+-------------------+----------------------------------------------------------
+ Angola            |   1.0397352      .9098022     1.1882244
+ Burkina Faso      |   1.0203074      .89195579    1.1671287
+ Burundi           |   1.0270041      .89742011    1.1752996
+ Cameroon          |   1.0038193      .87831312    1.1472598
+ Chad              |   1.0023072      .87952322    1.1422321
+ Congo DR          |   1.0412238      .91094887    1.1901294
+ Cote d'Ivoire     |   1.0256871      .89400953    1.1767592
+ Gabon             |   1.0290233      .8963027     1.1813966
+ Gambia            |   1.0387179      .9092297     1.1866471
+ Ghana             |   1.0271332      .89747304    1.1755258
+ Guinea            |   1.0150572      .88727164    1.1612467
+ Kenya             |   1.0318232      .89898705    1.1842875
+ Lesotho           |   1.0233362      .89032817    1.1762146
+ Liberia           |   1.0401928      .91100782    1.1876969
+ Malawi            |   1.0506679      .92347336    1.1953816
+ Mali              |   1.0227876      .89351153    1.1707678
+ Namibia           |   1.0140934      .88920677    1.15652
+ Niger             |   1.0243671      .8907339     1.1780487
+ Rwanda            |   1.0139313      .88827521    1.1573628
+ Senegal           |   1.03692        .90813041    1.1839743
+ Sierra Leone      |   1.0434117      .91421312    1.190869
+ Swaziland         |   1.0386624      .90563256    1.1912332
+ Togo              |   1.0089606      .88478392    1.150565
+ Zambia            |   .99426216      .88077551    1.1223714
+ Zimbabwe          |   1.0304556      .89527655    1.1860455
+-------------------+----------------------------------------------------------
+ Combined          |   1.0257789      .89936881    1.1699564
+------------------------------------------------------------------------------
+
+. 
+. 
+. *metareg mtct
+. recode  mtct (min/10.0 = 0 "Low") (10.1/max = 1 "High"), gen(mtc)
+(25 differences between mtct and mtc)
+
+. metan  dpt3_hpos nodpt3_hpos dpt3_hneg nodpt3_hneg, or lcols( country ) xlabel(.01,1,5,15) force classic random by (mtc)
+
+           Study     |     OR    [95% Conf. Interval]     % Weight
+---------------------+---------------------------------------------------
+     High
+Angola               |    0.717     0.437     1.176          3.65
+Cameroon             |    1.497     1.101     2.035          5.36
+Chad                 |    1.880     1.149     3.075          3.67
+Congo DR             |    0.733     0.482     1.114          4.28
+Cote d'Ivoire        |    1.033     0.709     1.507          4.66
+Gambia               |    0.692     0.390     1.228          3.11
+Ghana                |    0.985     0.526     1.843          2.78
+Lesotho              |    1.076     0.806     1.438          5.54
+Liberia              |    0.658     0.369     1.172          3.08
+Mali                 |    1.134     0.623     2.065          2.94
+Niger                |    1.058     0.807     1.386          5.73
+Senegal              |    0.641     0.308     1.333          2.26
+ Sub-total           |
+  D+L pooled OR      |    0.999     0.835     1.195         47.06
+---------------------+---------------------------------------------------
+     Low
+Burkina Faso         |    1.268     0.641     2.510          2.49
+Burundi              |    0.988     0.521     1.873          2.71
+Gabon                |    0.973     0.704     1.346          5.18
+Guinea               |    1.402     0.810     2.426          3.27
+Kenya                |    0.927     0.676     1.270          5.27
+Malawi               |    0.671     0.494     0.912          5.36
+Namibia              |    2.290     0.843     6.215          1.41
+Rwanda               |    1.872     0.819     4.281          1.90
+Sierra Leone         |    0.661     0.410     1.066          3.79
+Swaziland            |    0.849     0.678     1.064          6.18
+Togo                 |    2.023     1.000     4.093          2.38
+Zambia               |    1.469     1.255     1.718          6.83
+Zimbabwe             |    0.963     0.768     1.209          6.17
+ Sub-total           |
+  D+L pooled OR      |    1.063     0.873     1.294         52.94
+---------------------+---------------------------------------------------
+Overall              |           
+  D+L pooled OR      |    1.026     0.899     1.170        100.00
+---------------------+---------------------------------------------------
+
+Test(s) of heterogeneity:
+               Heterogeneity  degrees of
+                 statistic     freedom      P    I-squared**   Tau-squared
+
+High                22.04         11      0.024     50.1%       0.0464
+Low                 42.98         12      0.000     72.1%       0.0769
+Overall             65.17         24      0.000     63.2%       0.0595
+** I-squared: the variation in OR attributable to heterogeneity)
+
+Note: between group heterogeneity not calculated;
+only valid with inverse variance method
+
+Significance test(s) of OR=1
+
+High                  z=  0.01     p = 0.990
+Low                   z=  0.61     p = 0.543
+Overall               z=  0.38     p = 0.704
+-------------------------------------------------------------------------
+
+. gen logOR = log( _ES)
+
+. gen  selogOR =   _selogES
+
+. metareg logOR mtct, wsse(selogOR)graph
+
+Meta-regression                                       Number of obs  =      25
+REML estimate of between-study variance               tau2           =  .05753
+% residual variation due to heterogeneity             I-squared_res  =  63.70%
+Proportion of between-study variance explained        Adj R-squared  = -10.53%
+With Knapp-Hartung modification
+------------------------------------------------------------------------------
+       logOR |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+        mtct |  -.0102644   .0097145    -1.06   0.302    -.0303603    .0098316
+       _cons |   .1490152   .1346595     1.11   0.280    -.1295493    .4275797
+------------------------------------------------------------------------------
+
+. 
+. 
+. 
+. log close
+      name:  <unnamed>
+       log:  C:\Users\oadetokunboh\Desktop\Ola pers\Stata 14\study1_pmtc1.log
+  log type:  text
+ closed on:   6 Jan 2018, 18:21:14
+----------------------------------------------------------------------------------------------------------------------------------
